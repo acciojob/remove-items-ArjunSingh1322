@@ -36,14 +36,14 @@
     </form>
 
     <script>
-        // JavaScript to remove selected option
+    
         document.querySelector('input[type="button"]').addEventListener('click', function() {
-            // Get the dropdown list
+
             let colorSelect = document.querySelector('#colorSelect');
             
-            // Check if any option is selected
-            if (colorSelect.selectedIndex !== -1) {
-                // Remove the selected option
+        
+            if (colorSelect.selectedIndex) {
+     
                 colorSelect.remove(colorSelect.selectedIndex);
             } else {
                 alert('Please select a color to remove.');
